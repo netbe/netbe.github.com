@@ -1,11 +1,13 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am a French guy working as an iOS developer in Berlin at [Sinnerschrader Mobile](sinnerschrader-mobile.com).
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I maintain a tool (open source) to handle translations called [Babelish](github.com/netbe/babelish).
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+If you want to react about something I wrote you can reach me via [Twitter](twitter.com/netbeatwork), otherwise via [LinkedIn](de.linkedin.com/in/benaiteau).
+
+{{ site.author }}
