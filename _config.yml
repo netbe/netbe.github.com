@@ -5,6 +5,7 @@ baseurl: ""
 url: "http://netbe.github.io"
 twitter_username: netbeatwork
 github_username:  netbe
+github: netbe
 author: "François Benaiteau"
 timezone: "Europe/Berlin"
 # Build settings
