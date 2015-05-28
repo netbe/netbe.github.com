@@ -11,7 +11,7 @@ timezone: "Europe/Berlin"
 markdown: kramdown
 permalink: pretty
 pygments_options: ['lineanchors']
-
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 defaults:
   -
     scope:
