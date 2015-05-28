@@ -17,5 +17,5 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "post"
+      layout: "page"
       author: "François Benaiteau"
