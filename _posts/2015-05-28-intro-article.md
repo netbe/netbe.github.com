@@ -6,8 +6,7 @@ For quite some time, I wanted to write down some thoughts and findings around de
 
 At least this would look better than the previous content:
 
-![The old github page]({{ site.url }}/assets/intro-article-old-site.jpg)
+![The old github page]({{ site.url }}/assets/intro-article-old-site.jpg){:width="500px"}
 
 This was an idea to have an interactive CV using HTML5...
-
 
