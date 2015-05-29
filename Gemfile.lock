@@ -138,3 +138,4 @@ DEPENDENCIES
   jekyll-compose
   jekyll-picture-tag (~> 0.2.3)
   json
+  redcarpet
