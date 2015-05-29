@@ -27,14 +27,12 @@ pygments: true
 image:
   source: assets/images/_fullsize
   output: generated
+  markup: picture
   presets:
     # Proportional preset
-    users:
-      attr:
-        class: user-portrait
-        itemprop: image
-      width: 350
+    Default:
+      width: 600
     # Scaled and cropped preset
     half:
-      width: 400
-      height: 400
+      width: 320
+      height: 450
