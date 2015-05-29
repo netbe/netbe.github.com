@@ -6,7 +6,7 @@ For quite some time, I wanted to write down some thoughts and findings around de
 
 At least this would look better than the previous content:
 
-{{% image intro-article-old-site.jpg alt="the old github page" %}
+{% image intro-article-old-site.jpg alt="the old github page" %}
 
 This was an idea to have an interactive CV using HTML5...
 
