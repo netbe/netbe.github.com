@@ -8,7 +8,7 @@ github_username:  netbe
 author: "François Benaiteau"
 timezone: "Europe/Berlin"
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: pretty
 pygments_options: ['lineanchors']
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
