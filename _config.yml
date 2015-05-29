@@ -23,7 +23,7 @@ defaults:
 
 
 # Jekyll Picture Tag settings
-
+gems: [jekyll-picture-tag]
 pygments: true
 
 picture:

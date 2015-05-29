@@ -136,5 +136,5 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 35)
   jekyll-compose
-  jekyll-picture-tag
+  jekyll-picture-tag (~> 0.2.3)
   json
