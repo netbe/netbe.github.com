@@ -20,19 +20,56 @@ defaults:
       layout: "page"
       author: "François Benaiteau"
 
-# Jekyll Image Tag settings
+
+
+# Jekyll Picture Tag settings
 
 pygments: true
 
-image:
+picture:
   source: assets/images/_fullsize
   output: generated
   markup: picture
   presets:
-    # Proportional preset
-    Default:
-      width: 600
-    # Scaled and cropped preset
+    # Full width pictures
+    default:
+      ppi: [1, 1.5]
+      attr:
+        class: blog-full
+        itemprop: image
+      source_lrg:
+        media: "(min-width: 40em)"
+        width: 700
+      source_med:
+        media: "(min-width: 30em)"
+        width: 450
+      source_default:
+        width: 350
+        height: 200
+    # Half width pictures
     half:
-      width: 320
-      height: 450
+      ppi: [1, 1.5]
+      attr:
+        data-location: "{{location}}"
+        data-active: nil
+      source_lrg:
+        media: "(min-width: 40em)"
+        width: 400
+      source_med:
+        media: "(min-width: 30em)"
+        width: 250
+      source_default:
+        width: 350
+    # Self-set resolution sources. Useful if you don't want a 1:1 image size to dppx ratio.
+    gallery:
+      source_wide_hi:
+        media: "(min-width: 40em) and (min-resolution: 1.5dppx)"
+        width: 900
+        height: 600
+      source_wide:
+        media: "(min-width: 40em)"
+        width: 600
+        height: 400
+      source_default:
+        width: 250
+        height: 250
