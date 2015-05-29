@@ -7,4 +7,6 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 gem 'github-pages', versions['github-pages']
 gem 'jekyll-compose'
 
-gem 'jekyll-picture-tag'
+group :jekyll_plugins do
+  gem 'jekyll-picture-tag', '~> 0.2.3'
+end
