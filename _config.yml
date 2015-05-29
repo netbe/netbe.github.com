@@ -19,3 +19,22 @@ defaults:
     values:
       layout: "page"
       author: "François Benaiteau"
+
+# Jekyll Image Tag settings
+
+pygments: true
+
+image:
+  source: assets/images/_fullsize
+  output: generated
+  presets:
+    # Proportional preset
+    users:
+      attr:
+        class: user-portrait
+        itemprop: image
+      width: 350
+    # Scaled and cropped preset
+    half:
+      width: 400
+      height: 400
