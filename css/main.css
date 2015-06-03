@@ -173,7 +173,8 @@ a:visited { color: #205caa; }
   letter-spacing: -1.75px;
   line-height: 1;
   font-weight: 300;
-
+  float: left;
+  margin-bottom: 30px
 }
 
 .post-header h1 > a{
@@ -189,10 +190,13 @@ a:visited { color: #205caa; }
   font-size: 15px;
   color: #818181;
   float: right;
-  clear: both;
+  
 }
 
-.post-content { margin: 0 0 30px; }
+.post-content { 
+  margin: 0 0 30px;
+  clear: both;
+}
 
 .post-content > * { margin: 20px 0; }
 
