@@ -10,7 +10,7 @@ timezone: "Europe/Berlin"
 # Build settings
 markdown: redcarpet
 redcarpet:
-  extensions: ["strikethrough"]
+  extensions: ["strikethrough", "footnotes"]
 permalink: pretty
 pygments_options: ['lineanchors']
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
