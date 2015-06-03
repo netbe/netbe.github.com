@@ -9,6 +9,8 @@ author: "François Benaiteau"
 timezone: "Europe/Berlin"
 # Build settings
 markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
 permalink: pretty
 pygments_options: ['lineanchors']
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
