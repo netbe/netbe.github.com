@@ -5,9 +5,58 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Jun 2015 17:50:33 +0200</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2015 17:50:33 +0200</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 19:29:15 +0200</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 19:29:15 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Blogging on iPad</title>
+        <description>&lt;p&gt;Last weekend, I tried to finish the setup of this blog (layout and images) but I had only my iPad mini with me, but because everything was hosted on Github I thought it would be &lt;em&gt;easy&lt;/em&gt; to do it.&lt;/p&gt;
+
+&lt;p&gt;So I googled a little bit about people blogging with Jekyll and iPad. Most of them combine  and I did not find any &lt;del&gt;good&lt;/del&gt; free solution&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Besides I needed to edit the config to resolve the issue with the first article&amp;#39;s image (too big, needing to be resized).&lt;/p&gt;
+
+&lt;h2&gt;Config and Images&lt;/h2&gt;
+
+&lt;p&gt;Though I manage to commit directly on Github and see the result of the generated page, I needed at one point edit my &lt;code&gt;Gemfile&lt;/code&gt; so to regenerate the &lt;code&gt;Gemfile.lock&lt;/code&gt;, and that was definitely not possible on a simple editor. I needed a server, hopefully I remembered the &lt;a href=&quot;http://cloud9.io&quot;&gt;Cloud9 service&lt;/a&gt; and could have my own console to run commands like &lt;code&gt;bundle install&lt;/code&gt; and even serving the website on it.&lt;/p&gt;
+
+&lt;p&gt;One issue though is that it does not support mobile devices yet:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Can&amp;#39;t copy/paste&lt;/li&gt;
+&lt;li&gt;Can&amp;#39;t run a command again&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Thoughts&lt;/h2&gt;
+
+&lt;p&gt;Create a mobile app that would:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;retrieve website content from github&lt;/li&gt;
+&lt;li&gt;build and serve the website locally. See &lt;a href=&quot;https://github.com/swisspol/GCDWebServer&quot;&gt;GCDServer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;create/edit articles&lt;/li&gt;
+&lt;li&gt;publish article&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Create a development friendly keyboard extension (arrows, ESC, CTRL keys...)&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;Need to get back to this later, &lt;a href=&quot;http://www.hardscrabble.net/2015/how-to-jekyll-from-ios/&quot;&gt;Editorial&lt;/a&gt; seems to be a good solution ($6.99).&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 03 Jun 2015 00:00:00 +0200</pubDate>
+        <link>http://netbe.github.io/2015/06/03/ipad-blogging/</link>
+        <guid isPermaLink="true">http://netbe.github.io/2015/06/03/ipad-blogging/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Time to start</title>
