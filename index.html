@@ -2,15 +2,8 @@
 layout: default
 ---
 
-<div class="home">
-
-  <ul class="posts">
-
+<div class="posts">
     {% for page in site.posts %}
-      <li>
           {% include post.html %}
-      </li>
     {% endfor %}
-  </ul>
-
 </div>
