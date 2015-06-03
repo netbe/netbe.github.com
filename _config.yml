@@ -8,6 +8,7 @@ github_username:  netbe
 author: "François Benaiteau"
 timezone: "Europe/Berlin"
 # Build settings
+exclude: [vendor] # https://github.com/jekyll/jekyll/issues/2938
 markdown: redcarpet
 redcarpet:
   extensions: ["strikethrough", "footnotes"]
