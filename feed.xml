@@ -5,8 +5,8 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Jun 2015 19:29:15 +0200</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2015 19:29:15 +0200</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 19:41:17 +0200</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 19:41:17 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -27,6 +27,10 @@
 &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;After a few tryouts, I ended up using the &lt;code&gt;jekyll-picture-tag&lt;/code&gt; &lt;a href=&quot;https://github.com/robwierzbowski/jekyll-picture-tag&quot;&gt;plugin&lt;/a&gt; in order to have different image sizes depending on the resolution of the device (responsive design).&lt;/p&gt;
+
+&lt;p&gt;It worked well locally but Github was still failing, because it does not support all plugins&lt;sup id=&quot;fnref2&quot;&gt;&lt;a href=&quot;#fn2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. The only solution then was to use Travis to build and publish the site ; quite straight forward with the &lt;code&gt;rake-jekyll&lt;/code&gt; &lt;a href=&quot;https://github.com/jirutka/rake-jekyll&quot;&gt;gem&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h2&gt;Thoughts&lt;/h2&gt;
 
 &lt;p&gt;Create a mobile app that would:&lt;/p&gt;
@@ -40,12 +44,23 @@
 
 &lt;p&gt;Create a development friendly keyboard extension (arrows, ESC, CTRL keys...)&lt;/p&gt;
 
+&lt;h2&gt;Next steps&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Post to Twitter the article link when published - should be easy with travis now.&lt;/li&gt;
+&lt;li&gt;Add comments system with Github issues&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;div class=&quot;footnotes&quot;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 
 &lt;li id=&quot;fn1&quot;&gt;
 &lt;p&gt;Need to get back to this later, &lt;a href=&quot;http://www.hardscrabble.net/2015/how-to-jekyll-from-ios/&quot;&gt;Editorial&lt;/a&gt; seems to be a good solution ($6.99).&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn2&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/using-jekyll-plugins-with-github-pages/&quot;&gt;GitHub Pages currently supports &lt;strong&gt;several&lt;/strong&gt; Jekyll plugins&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;/ol&gt;
