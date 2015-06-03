@@ -17,6 +17,10 @@ One issue though is that it does not support mobile devices yet:
 * Can't run a command again
 * ...
 
+After a few tryouts, I ended up using the `jekyll-picture-tag` [plugin](https://github.com/robwierzbowski/jekyll-picture-tag) in order to have different image sizes depending on the resolution of the device (responsive design).
+
+It worked well locally but Github was still failing, because it does not support all plugins[^2]. The only solution then was to use Travis to build and publish the site ; quite straight forward with the `rake-jekyll` [gem](https://github.com/jirutka/rake-jekyll).
+
 ## Thoughts
 
 Create a mobile app that would:
@@ -28,5 +32,11 @@ Create a mobile app that would:
 
 Create a development friendly keyboard extension (arrows, ESC, CTRL keys...)
 
+## Next steps
+
+* Post to Twitter the article link when published - should be easy with travis now.
+* Add comments system with Github issues
 
 [^1]: Need to get back to this later, [Editorial](http://www.hardscrabble.net/2015/how-to-jekyll-from-ios/) seems to be a good solution ($6.99).
+
+[^2]: [GitHub Pages currently supports **several** Jekyll plugins](https://help.github.com/articles/using-jekyll-plugins-with-github-pages/)
