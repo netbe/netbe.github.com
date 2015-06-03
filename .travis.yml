@@ -1,5 +1,0 @@
-language: ruby
-script: bundle exec rake deploy
-env:
-  global:
-    secure: EJ5+pJE+sSutpqyan9Qg2wG9v1aIMFke8MwF4P105kiR5rHUA57ipyY3ywIVS2DijLI4HQAmD1eKmwGsShWZ8aR0lAKwke0rZO9iPbKM1Pb17T9yWuMdhoixBAHfXJv7DV+t9VyKjtAF4TVaXJSC67h/Ugc8pfL+n7mfuiY4pAc=
