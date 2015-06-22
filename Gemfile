@@ -7,8 +7,10 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 gem 'jekyll', versions['jekyll']
 gem 'jekyll-compose'
 
+
 group :jekyll_plugins do
   gem 'jekyll-picture-tag', '~> 0.2.3'
+  gem 'jekyll-video-tag'
 end
 gem 'redcarpet'
 # custom deployment as Github Pages does not support all plugins like picture-tag

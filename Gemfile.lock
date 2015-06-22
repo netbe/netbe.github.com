@@ -60,6 +60,7 @@ GEM
       mini_magick (~> 3.8.0)
     jekyll-sass-converter (1.2.0)
       sass (~> 3.2)
+    jekyll-video-tag (0.1.0)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     json (1.8.2)
@@ -130,7 +131,7 @@ DEPENDENCIES
   jekyll (= 2.4.0)
   jekyll-compose
   jekyll-picture-tag (~> 0.2.3)
-  json
+  jekyll-video-tag
   rake
   rake-jekyll
   redcarpet
