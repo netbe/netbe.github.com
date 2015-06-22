@@ -5,9 +5,83 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Jun 2015 19:59:16 +0200</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2015 19:59:16 +0200</lastBuildDate>
+    <pubDate>Tue, 23 Jun 2015 00:37:42 +0200</pubDate>
+    <lastBuildDate>Tue, 23 Jun 2015 00:37:42 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Hackathons</title>
+        <description>&lt;p&gt;Lately, I have been participating to some hackathons in Berlin:&lt;/p&gt;
+
+&lt;h2&gt;Apps World Germany&lt;/h2&gt;
+
+&lt;p&gt;22/04/2015&lt;/p&gt;
+
+&lt;p&gt;This was 2 days event about development, strategy and marketing around mobile and hopefully it included a hackathon -- much more interesting than the conferences. The hackathon had two sponsors :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.the-hackfest.com/events/blukii-hackfest/&quot;&gt;Blukii&lt;/a&gt;, a company working on sensors based on Bluetooth LE.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.the-hackfest.com/events/wincor-nixdorf-hackfest/&quot;&gt;Wincor Nixdorf&lt;/a&gt;, offers an Android device including payment system with printer and nfc reader...&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For that I join one collegue, &lt;a href=&quot;https://github.com/Neoklosch&quot;&gt;Markus&lt;/a&gt; and a former collegue &lt;a href=&quot;https://github.com/buffstop&quot;&gt;Andreas&lt;/a&gt; and formed the &lt;a href=&quot;https://github.com/Cookie-Monsters&quot;&gt;team Cookie Monster(s)&lt;/a&gt; to work on two projects, one for on each sponsor.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Cookie-Monsters/Donator&quot;&gt;Donator&lt;/a&gt;, an Android app to donate money to charity organisation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/buffstop/FlowerAlarm&quot;&gt;Plantkii&lt;/a&gt;, an iOS app to read the humidity, luminosity and temperature of a plant.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Technically on the iOS part, I spent to much time on little details like permissions that were not going to show up on the demo. But I did learn a thing or two &amp;#39;cause the SDK to interact with the sensor was in Swift and some methods were not available through the bridge to Objective-C.&lt;/p&gt;
+
+&lt;h2&gt;HacknWear&lt;/h2&gt;
+
+&lt;p&gt;12/06/2015&lt;/p&gt;
+
+&lt;p&gt;Organised by Bemyapp and sponsored by Salesforce, was the occasion to play with some gadgets. On this hackathon with the same team, we end it up doing a Located Question based app called &lt;a href=&quot;https://github.com/buffstop/Qute&quot;&gt;uQu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This was better than the Apps World because of the mood, the beer did help ;) but a lot because of the friendly staff and everyone is in the same state, trying to make Salesforce api work.&lt;/p&gt;
+
+&lt;p&gt;Besides, I had a chance to play with a Sphero as you can see below. I wouldn&amp;#39;t buy it but it was fun to try it out:&lt;/p&gt;
+
+&lt;iframe width=&quot;500&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/131478785 &quot; frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;So more about the hack, it was the first/quick attempt to learn about doing an Apple Watch extension, but again wasted time on stuff that did not matter like getting the location and display a map on it and ended up &lt;em&gt;faking it&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2&gt;BattleHack Berlin&lt;/h2&gt;
+
+&lt;p&gt;19/06/2015&lt;/p&gt;
+
+&lt;p&gt;I was not egger to go to that one -- mostly because it was again one (part) of the weekend busy -- but at the end, happy with the result.&lt;/p&gt;
+
+&lt;p&gt;We had to include of the sponsors in our hack such as Braintree/Paypal (payment), Heroku, Pusher, Sendgrid and Twilo.&lt;/p&gt;
+
+&lt;p&gt;This time I teamed up with Ben and Thomas and we chose to make a Github bot which will help fix issues in giving rewards ($) to contributors.&lt;/p&gt;
+
+&lt;p&gt;Though we discovered other people had this &lt;a href=&quot;http://bountysource.com&quot;&gt;idea&lt;/a&gt; or even a team the week before in &lt;a href=&quot;https://2015.battlehack.org/tokyo?locale=ja&quot;&gt;Japan&lt;/a&gt;, I especially like the fact that all the interaction stays on Github and that it does not require permissions on Github. You can call @potogold on any repos and any issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/netbe/potogold&quot;&gt;Pot o&amp;#39; Gold&lt;/a&gt;&lt;/strong&gt; was not a winning project but was a success for me because we achieved what we wanted in a 24 hours straight (no sleep) and learned new stuff:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Github api&lt;/li&gt;
+&lt;li&gt;Braintree for payment&lt;/li&gt;
+&lt;li&gt;Flask (similar as Sinatra but in python)&lt;/li&gt;
+&lt;li&gt;Twilio for sending sms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We also used Sendgrid and Heroku but that was not really new to me.&lt;/p&gt;
+
+&lt;p&gt;So we will continue this project to make it available (now using sandbox payment) and hopefully the community will support it.&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;At the end the hackathons are a good experience not only to try something new but as a reminder on what matter during a project : &lt;strong&gt;Get the shit done&lt;/strong&gt;. It does not matter if the code is well organised follow convention or documented. Besides most of time you end up faking it for the demo. I hope I get better at it and helps me ship software faster -- what&amp;#39;s the point to have quality without being live?&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Jun 2015 00:00:00 +0200</pubDate>
+        <link>http://netbe.github.io/2015/06/22/hackathons/</link>
+        <guid isPermaLink="true">http://netbe.github.io/2015/06/22/hackathons/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Blogging on iPad</title>

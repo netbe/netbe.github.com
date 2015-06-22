@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>to be defined</title>
+    <title>Hackathons</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This site contains articles about my work and other geeky stuff.">
-    <link rel="canonical" href="http://netbe.github.io/">
+    <link rel="canonical" href="http://netbe.github.io/2015/06/22/hackathons/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -64,13 +64,10 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="posts">
-    
-          <div class="post">
+      <div class="post">
 
- <header class="post-header">
-    <h1><a href="/2015/06/22/hackathons/">Hackathons</a></h1>
-    <p class="meta">Jun 22, 2015</p>
+  <header class="post-header">
+    <h1>Hackathons</h1>
   </header>
 
   <article class="post-content">
@@ -141,106 +138,6 @@
 
   </article>
 
-</div>
-
-    
-          <div class="post">
-
- <header class="post-header">
-    <h1><a href="/2015/06/03/ipad-blogging/">Blogging on iPad</a></h1>
-    <p class="meta">Jun 3, 2015</p>
-  </header>
-
-  <article class="post-content">
-  <p>Last weekend, I tried to finish the setup of this blog (layout and images) but I had only my iPad mini with me, but because everything was hosted on Github I thought it would be <em>easy</em> to do it.</p>
-
-<p>So I googled a little bit about people blogging with Jekyll and iPad. Most of them combine  and I did not find any <del>good</del> free solution<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>. Besides I needed to edit the config to resolve the issue with the first article&#39;s image (too big, needing to be resized).</p>
-
-<h2>Config and Images</h2>
-
-<p>Though I manage to commit directly on Github and see the result of the generated page, I needed at one point edit my <code>Gemfile</code> so to regenerate the <code>Gemfile.lock</code>, and that was definitely not possible on a simple editor. I needed a server, hopefully I remembered the <a href="http://cloud9.io">Cloud9 service</a> and could have my own console to run commands like <code>bundle install</code> and even serving the website on it.</p>
-
-<p>One issue though is that it does not support mobile devices yet:</p>
-
-<ul>
-<li>Can&#39;t copy/paste</li>
-<li>Can&#39;t run a command again</li>
-<li>...</li>
-</ul>
-
-<p>After a few tryouts, I ended up using the <code>jekyll-picture-tag</code> <a href="https://github.com/robwierzbowski/jekyll-picture-tag">plugin</a> in order to have different image sizes depending on the resolution of the device (responsive design).</p>
-
-<p>It worked well locally but Github was still failing, because it does not support all plugins<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>. The only solution then was to use Travis to build and publish the site ; quite straight forward with the <code>rake-jekyll</code> <a href="https://github.com/jirutka/rake-jekyll">gem</a>.</p>
-
-<h2>Thoughts</h2>
-
-<p>Create a mobile app that would:</p>
-
-<ul>
-<li>retrieve website content from github</li>
-<li>build and serve the website locally. See <a href="https://github.com/swisspol/GCDWebServer">GCDServer</a></li>
-<li>create/edit articles</li>
-<li>publish article</li>
-</ul>
-
-<p>Create a development friendly keyboard extension (arrows, ESC, CTRL keys...)</p>
-
-<h2>Next steps</h2>
-
-<ul>
-<li>Post to Twitter the article link when published - should be easy with travis now.</li>
-<li>Add comments system with Github issues</li>
-</ul>
-
-<div class="footnotes">
-<hr>
-<ol>
-
-<li id="fn1">
-<p>Need to get back to this later, <a href="http://www.hardscrabble.net/2015/how-to-jekyll-from-ios/">Editorial</a> seems to be a good solution ($6.99).&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-<li id="fn2">
-<p><a href="https://help.github.com/articles/using-jekyll-plugins-with-github-pages/">GitHub Pages currently supports <strong>several</strong> Jekyll plugins</a>&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
-
-  </article>
-
-</div>
-
-    
-          <div class="post">
-
- <header class="post-header">
-    <h1><a href="/2015/05/28/intro-article/">Time to start</a></h1>
-    <p class="meta">May 28, 2015</p>
-  </header>
-
-  <article class="post-content">
-  <p>For quite some time, I wanted to write down some thoughts and findings around development and technology. Hopefully that won&#39;t be a &quot;one article blog&quot; containing this article that announces more articles to come.</p>
-
-<p>At least this would look better than the previous content:</p>
-
-<p><picture>
-    <source srcset="/generated/intro-article-old-site-300by133-332a9c.jpg" media="(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)">
-    <source srcset="/generated/intro-article-old-site-150by66-332a9c.jpg" media="(max-width: 20em)">
-    <source srcset="/generated/intro-article-old-site-640by284-332a9c.jpg" media="(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)">
-    <source srcset="/generated/intro-article-old-site-320by142-332a9c.jpg" media="(max-width: 40em)">
-    <source srcset="/generated/intro-article-old-site-1352by599-332a9c.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-    <source srcset="/generated/intro-article-old-site-680by301-332a9c.jpg">
-    <img srcset="/generated/intro-article-old-site-680by301-332a9c.jpg" class="default-pict" alt="the old github page" >
-  </picture></p>
-
-<p>This was an idea to have an interactive CV using HTML5...</p>
-
-  </article>
-
-</div>
-
-    
 </div>
 
       </div>
