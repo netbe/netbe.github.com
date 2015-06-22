@@ -56,6 +56,6 @@ So we will continue this project to make it available (now using sandbox payment
 
 ## Conclusion
 
-At the end the hackathons are a good experience not only to try something new but as a reminder on what matter during a project : Get the shit done. It does not matter if the code is well organised follow convention or documented. Besides most of time you end up faking it for the demo.
+At the end the hackathons are a good experience not only to try something new but as a reminder on what matter during a project : **Get the shit done**. It does not matter if the code is well organised follow convention or documented. Besides most of time you end up faking it for the demo. I hope I get better at it and helps me ship software faster -- what's the point to have quality without being live?
 
 
