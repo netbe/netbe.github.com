@@ -189,10 +189,10 @@ a:visited { color: #205caa; }
   font-size: 15px;
   color: #818181;
   float: right;
-
+  
 }
 
-.post-content {
+.post-content { 
   margin: 0 0 30px;
   clear: both;
 }
@@ -422,12 +422,3 @@ a:visited { color: #205caa; }
     margin: 0 0 15px; }
 
 }
-/* -------------------jekyll-video-----------------------------*/
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 0; }
-  .video-container iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%; }
