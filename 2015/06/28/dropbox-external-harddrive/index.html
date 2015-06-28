@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blogging on iPad</title>
+    <title>Dropbox External Harddrive</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This site contains articles about my work and other geeky stuff.">
-    <link rel="canonical" href="http://netbe.github.io/2015/06/03/ipad-blogging/">
+    <link rel="canonical" href="http://netbe.github.io/2015/06/28/dropbox-external-harddrive/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -77,64 +77,72 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Blogging on iPad</h1>
+    <h1>Dropbox External Harddrive</h1>
   </header>
 
   <article class="post-content">
-  <p>Last weekend, I tried to finish the setup of this blog (layout and images) but I had only my iPad mini with me, but because everything was hosted on Github I thought it would be <em>easy</em> to do it.</p>
+  <p>I recently purchased a Dropbox account with 1TB. THe idea is to use it to <del>sync</del> backup my data on all my devices (iPhone, iPad, MacBook Air), especially photos/videos.</p>
 
-<p>So I googled a little bit about people blogging with Jekyll and iPad. Most of them combine  and I did not find any <del>good</del> free solution<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>. Besides I needed to edit the config to resolve the issue with the first article&#39;s image (too big, needing to be resized).</p>
+<p>One issue I have is the lack of space on the Mac (128GB), so it is not possible to store my new pics on it. Moreover, I have a 60GB <del>iPhoto</del> Photos library. It would be nice to back it up also to dropbox in case my harddrive gets broken or stolen.</p>
 
-<h2>Config and Images</h2>
+<h2>Problem</h2>
 
-<p>Though I manage to commit directly on Github and see the result of the generated page, I needed at one point edit my <code>Gemfile</code> so to regenerate the <code>Gemfile.lock</code>, and that was definitely not possible on a simple editor. I needed a server, hopefully I remembered the <a href="http://cloud9.io">Cloud9 service</a> and could have my own console to run commands like <code>bundle install</code> and even serving the website on it.</p>
+<p>With Dropbox, you cannot specify an external location like harddrive easily nor without consequences. You could have a symlink in your Dropbox folder which points to the external harddrive, so the content is indeed backed up to Dropbox.</p>
 
-<p>One issue though is that it does not support mobile devices yet:</p>
+<p>But when the harddrive gets disconnected, your content will be deleted from Dropbox (there are no files present anymore).</p>
 
-<ul>
-<li>Can&#39;t copy/paste</li>
-<li>Can&#39;t run a command again</li>
-<li>...</li>
-</ul>
-
-<p>After a few tryouts, I ended up using the <code>jekyll-picture-tag</code> <a href="https://github.com/robwierzbowski/jekyll-picture-tag">plugin</a> in order to have different image sizes depending on the resolution of the device (responsive design).</p>
-
-<p>It worked well locally but Github was still failing, because it does not support all plugins<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>. The only solution then was to use Travis to build and publish the site ; quite straight forward with the <code>rake-jekyll</code> <a href="https://github.com/jirutka/rake-jekyll">gem</a>.</p>
-
-<h2>Thoughts</h2>
-
-<p>Create a mobile app that would:</p>
+<h2>Solution</h2>
 
 <ul>
-<li>retrieve website content from github</li>
-<li>build and serve the website locally. See <a href="https://github.com/swisspol/GCDWebServer">GCDServer</a></li>
-<li>create/edit articles</li>
-<li>publish article</li>
+<li>use a second dropbox instance application, <a href="http://lifehacker.com/5971204/run-multiple-dropbox-accounts-on-one-computer">see how here</a></li>
+<li>this application has its configuration file on the external harddrive</li>
+<li>it uses selective sync</li>
 </ul>
 
-<p>Create a development friendly keyboard extension (arrows, ESC, CTRL keys...)</p>
-
-<h2>Next steps</h2>
+<p>Two effects:</p>
 
 <ul>
-<li>Post to Twitter the article link when published - should be easy with travis now.</li>
-<li>Add comments system with Github issues</li>
+<li><p>can&#39;t launch the application without the harddrive connected
+<picture>
+<source srcset="/generated/no-harddrive-300by195-a67d54.png" media="(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)">
+<source srcset="/generated/no-harddrive-150by97-a67d54.png" media="(max-width: 20em)">
+<source srcset="/generated/no-harddrive-424by275-a67d54.png" media="(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)">
+<source srcset="/generated/no-harddrive-320by208-a67d54.png" media="(max-width: 40em)">
+<source srcset="/generated/no-harddrive-424by275-a67d54.png" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+<source srcset="/generated/no-harddrive-424by275-a67d54.png">
+<img srcset="/generated/no-harddrive-424by275-a67d54.png" class="default-pict" alt="no harddrive connected" >
+</picture></p></li>
+<li><p>can&#39;t unmount the harddrive before quitting the app
+<picture>
+<source srcset="/generated/harddrive-eject-300by101-5a0e57.png" media="(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)">
+<source srcset="/generated/harddrive-eject-150by51-5a0e57.png" media="(max-width: 20em)">
+<source srcset="/generated/harddrive-eject-482by163-5a0e57.png" media="(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)">
+<source srcset="/generated/harddrive-eject-320by108-5a0e57.png" media="(max-width: 40em)">
+<source srcset="/generated/harddrive-eject-482by163-5a0e57.png" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+<source srcset="/generated/harddrive-eject-482by163-5a0e57.png">
+<img srcset="/generated/harddrive-eject-482by163-5a0e57.png" class="default-pict" alt="can't unmount" >
+</picture></p></li>
 </ul>
 
-<div class="footnotes">
-<hr>
-<ol>
+<p>That way your data will not get erase when you unmount your hardrive or at least get a warning.</p>
 
-<li id="fn1">
-<p>Need to get back to this later, <a href="http://www.hardscrabble.net/2015/how-to-jekyll-from-ios/">Editorial</a> seems to be a good solution ($6.99).&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
+<h2>What about iCloud?</h2>
 
-<li id="fn2">
-<p><a href="https://help.github.com/articles/using-jekyll-plugins-with-github-pages/">GitHub Pages currently supports <strong>several</strong> Jekyll plugins</a>&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
-</li>
+<p>I did try iCloud for less than a month. Here&#39;s the pros and cons:</p>
 
-</ol>
-</div>
+<h3>Pros</h3>
+
+<ul>
+<li>Easy to setup</li>
+</ul>
+
+<h3>Cons</h3>
+
+<ul>
+<li>Slow to backup</li>
+<li>Can&#39;t see the space occupied on the device</li>
+<li>Don&#39;t know when files are finally backed up</li>
+</ul>
 
   </article>
 
