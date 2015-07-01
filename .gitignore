@@ -1,3 +1,5 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+# since TravisCI fails with the Gemfile.lock...
+Gemfile.lock
