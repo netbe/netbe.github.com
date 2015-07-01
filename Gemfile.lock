@@ -24,7 +24,7 @@ GEM
     fast-stemmer (1.0.2)
     fastimage (1.6.8)
       addressable (~> 2.3, >= 2.3.5)
-    ffi (1.9.8)
+    ffi (1.9.10)
     gh (0.14.0)
       addressable
       backports
@@ -100,7 +100,7 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.3.2)
     safe_yaml (1.0.4)
-    sass (3.4.14)
+    sass (3.4.15)
     slop (3.6.0)
     subexec (0.2.3)
     timers (4.0.1)
@@ -130,6 +130,7 @@ DEPENDENCIES
   jekyll (= 2.4.0)
   jekyll-compose
   jekyll-picture-tag (~> 0.2.3)
+  json
   rake
   rake-jekyll
   redcarpet
