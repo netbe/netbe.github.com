@@ -5,9 +5,28 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Jul 2015 00:10:59 +0200</pubDate>
-    <lastBuildDate>Thu, 02 Jul 2015 00:10:59 +0200</lastBuildDate>
+    <pubDate>Fri, 24 Jul 2015 20:14:34 +0200</pubDate>
+    <lastBuildDate>Fri, 24 Jul 2015 20:14:34 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Video Downloader</title>
+        <description>&lt;p&gt;Last week I was in holidays with some friends for a festival and at the end of it, the last day I was already thinking about how I will show them the videos and photos.&lt;/p&gt;
+
+&lt;p&gt;I had my iPad mini and in the remaining time between two or three &lt;strong&gt;ploufs&lt;/strong&gt;, it was manageable to open iMovie and wrap this up quickly. Everything went fine until the need to add a soundtrack to the movie, I needed a mp3/mp4 file from one of the band of the fest. A quick &lt;strong&gt;youtube to mp3&lt;/strong&gt; search and I was almost finish except that it was not possible to save video from Safari or Google Chrome.&lt;/p&gt;
+
+&lt;p&gt;Today, searching on the AppStore for a &lt;strong&gt;video downloader&lt;/strong&gt; app that could save to the Camera roll, I found out a lot of apps but none properly working.&lt;/p&gt;
+
+&lt;p&gt;Hence this post, let&amp;#39;s do a small app that download a file from an URL and save it to the Photos app.&lt;/p&gt;
+
+&lt;p&gt;Writing a tutorial would be too long, so I&amp;#39;ll try my first screencast at the same time, and do it in Swift that way I would end up with some Swift code.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Jul 2015 00:00:00 +0200</pubDate>
+        <link>http://netbe.github.io/2015/07/24/video-downloader/</link>
+        <guid isPermaLink="true">http://netbe.github.io/2015/07/24/video-downloader/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dropbox External Harddrive</title>
