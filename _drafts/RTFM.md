@@ -1,6 +1,6 @@
 Sometimes the answer to your problem is where it is supposed to be : in the documentation and not Stackoverflow... I had an issue the other day to make the backButton work for the navigationBar but when reading the doc everything is clear:
 
-`You're doing it wrong!`
+**You're doing it wrong!**
 
 > Updating the Navigation Bar
 > When the user changes the top-level view controller, the navigation controller updates the navigation bar accordingly. Specifically, the navigation controller updates the bar button items displayed in each of the three navigation bar positions: left, middle, and right. Bar button items are instances of the UIBarButtonItem class. You can create items with custom content or create standard system items depending on your needs. For more information about how to create bar button items, see UIBarButtonItem Class Reference.
