@@ -5,9 +5,41 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 07 Sep 2015 21:25:00 +0200</pubDate>
-    <lastBuildDate>Mon, 07 Sep 2015 21:25:00 +0200</lastBuildDate>
+    <pubDate>Mon, 07 Sep 2015 21:26:36 +0200</pubDate>
+    <lastBuildDate>Mon, 07 Sep 2015 21:26:36 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Rtfm</title>
+        <description>&lt;p&gt;Sometimes the answer to your problem is where it is supposed to be : in the documentation and not Stackoverflow... I had an issue the other day to make the backButton work for the navigationBar but when reading the doc everything is clear:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You&amp;#39;re doing it wrong!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Updating the Navigation Bar
+When the user changes the top-level view controller, the navigation controller updates the navigation bar accordingly. Specifically, the navigation controller updates the bar button items displayed in each of the three navigation bar positions: left, middle, and right. Bar button items are instances of the UIBarButtonItem class. You can create items with custom content or create standard system items depending on your needs. For more information about how to create bar button items, see UIBarButtonItem Class Reference.&lt;/p&gt;
+
+&lt;p&gt;For all but the root view controller on the navigation stack, the item on the left side of the navigation bar provides navigation back to the previous view controller. The contents of this left-most button are determined as follows:&lt;/p&gt;
+
+&lt;p&gt;If the new top-level view controller has a custom left bar button item, that item is displayed. To specify a custom left bar button item, set the leftBarButtonItem property of the view controller’s navigation item.&lt;/p&gt;
+
+&lt;p&gt;If the top-level view controller does not have a custom left bar button item, but the navigation item of the previous view controller has an object in its backBarButtonItem property, the navigation bar displays that item.&lt;/p&gt;
+
+&lt;p&gt;If a custom bar button item is not specified by either of the view controllers, a default back button is used and its title is set to the value of the title property of the previous view controller—that is, the view controller one level down on the stack. (If there is only one view controller on the navigation stack, no back button is displayed.)&lt;/p&gt;
+
+&lt;p&gt;NOTE&lt;/p&gt;
+
+&lt;p&gt;In cases where the title of a back button is too long to fit in the available space, the navigation bar may substitute the string “Back” for the actual button title. The navigation bar does this only if the back button is provided by the previous view controller. If the new top-level view controller has a custom left bar button item—an object in the leftBarButtonItem or leftBarButtonItems property of its navigation item—the navigation bar does not change the button title.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/UIKit/Reference/UINavigationController_Class/&quot;&gt;Apple&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 07 Nov 2015 00:00:00 +0100</pubDate>
+        <link>http://netbe.github.io/2015/11/07/RTFM/</link>
+        <guid isPermaLink="true">http://netbe.github.io/2015/11/07/RTFM/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Video Downloader</title>
