@@ -16,25 +16,6 @@ Sometimes the answer to your problem is where it is supposed to be : in the docu
 > NOTE
 > 
 > In cases where the title of a back button is too long to fit in the available space, the navigation bar may substitute the string “Back” for the actual button title. The navigation bar does this only if the back button is provided by the previous view controller. If the new top-level view controller has a custom left bar button item—an object in the leftBarButtonItem or leftBarButtonItems property of its navigation item—the navigation bar does not change the button title.
-> 
-> The navigation controller updates the middle of the navigation bar as follows:
-> 
-> If the new top-level view controller has a custom title view, the navigation bar displays that view in place of the default title view. To specify a custom title view, set the titleView property of the view controller’s navigation item.
-> 
-> If no custom title view is set, the navigation bar displays a label containing the view controller’s default title. The string for this label is usually obtained from the title property of the view controller itself. If you want to display a different title than the one associated with the view controller, set the title property of the view controller’s navigation item instead.
-> 
-> The navigation controller updates the right side of the navigation bar as follows:
-> 
-> If the new top-level view controller has a custom right bar button item, that item is displayed. To specify a custom right bar button item, set the rightBarButtonItem property of the view controller’s navigation item.
-> 
-> If no custom right bar button item is specified, the navigation bar displays nothing on the right side of the bar.
-> 
-> The navigation controller updates the navigation bar each time the top view controller changes. Thus, these changes occur each time a view controller is pushed onto the stack or popped from it. When you animate a push or pop operation, the navigation controller similarly animates the change to the navigation bar content.
-> 
-> Tinting of the navigation bar is controlled by properties of the navigation bar itself. Use the tintColor property to change the tint color of items in the bar and use the barTintColor property to change the tint color of the bar itself. Navigation bars do not inherit their tint color from the currently displayed view controller.
-> 
-> For more information about the navigation bar, see UINavigationBar Class Reference.
+
 
 Source: [Apple](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UINavigationController_Class/)
-
-Note: also worth it to read the next part regarding the middle and right barButtonItems
