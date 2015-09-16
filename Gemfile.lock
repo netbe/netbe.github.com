@@ -32,8 +32,8 @@ GEM
       multi_json (~> 1.0)
       net-http-persistent (>= 2.7)
       net-http-pipeline
-    highline (1.7.3)
-    hitimes (1.2.2)
+    highline (1.7.5)
+    hitimes (1.2.3)
     jekyll (2.4.0)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
