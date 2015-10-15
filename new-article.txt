@@ -1,1 +1,0 @@
-Tweet your blog post title with Jekyll - https://netbe.github.io/2015/10/14/jekyll-twitter-travisci
