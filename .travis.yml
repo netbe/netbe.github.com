@@ -1,7 +1,12 @@
 language: ruby
 rvm: 2.2.0
 sudo: false
-script: bundle exec rake deploy
 env:
   global:
     secure: EJ5+pJE+sSutpqyan9Qg2wG9v1aIMFke8MwF4P105kiR5rHUA57ipyY3ywIVS2DijLI4HQAmD1eKmwGsShWZ8aR0lAKwke0rZO9iPbKM1Pb17T9yWuMdhoixBAHfXJv7DV+t9VyKjtAF4TVaXJSC67h/Ugc8pfL+n7mfuiY4pAc=
+before_install:
+- openssl aes-256-cbc -K $encrypted_9cab519512ab_key -iv $encrypted_9cab519512ab_iv
+  -in .trc.enc -out .trc -d
+before_script: bundle exec rake prepare_new_article_tweet
+script: bundle exec rake deploy
+after_success: bundle exec rake tweet
