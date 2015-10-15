@@ -75,6 +75,58 @@
           <div class="post">
 
  <header class="post-header">
+    <h1><a href="/2015/10/14/jekyll-twitter-travisci/">Tweet your blog post title with Jekyll</a></h1>
+    <p class="meta">Oct 14, 2015</p>
+  </header>
+
+  <article class="post-content">
+  <ol>
+<li>Add <code>gem &#39;t&#39;</code> to your Gemfile</li>
+<li><code>bundle install</code></li>
+<li><code>bundle exec t authorize</code> and follow instructions to get <a href="https://apps.twitter.com/">API keys</a>.</li>
+<li>Permissions must be <em>&#39;Read and Write&#39;</em></li>
+<li>Once authenticated, the permissions are stored in <code>~/.trc</code>. We will need this file to tweet once the deployment successful, but as this file contains sensitive information, you want to secure it via <code>travis encrypt-file</code> like this:</li>
+</ol>
+
+<p><noscript><pre>400: Invalid request
+</pre></noscript><script src="https://gist.github.com/c6d97f59656d802b9f32.js"> </script></p>
+
+<p>Now let&#39;s see what happen in the rake task <code>tweet_last_article</code>. Two parts :</p>
+
+<p><strong>1.Before Deployment,</strong> we check if we have an unpublished article and retrieve its title and url.</p>
+
+<p>We go through the list of <code>_posts</code> files and take the last one. Grab the title from the content if any or build the one from the filename. Then goes the URL also building the last name.</p>
+
+<p><noscript><pre>400: Invalid request
+</pre></noscript><script src="https://gist.github.com/8e89571a7b0637c5b703.js"> </script></p>
+
+<p><em>Note that the base URL could certainly be retrieved from somewhere else, but I didn&#39;t look more into it.</em></p>
+
+<p>Don&#39;t forget to execute it before the deployment to Github:</p>
+
+<p><noscript><pre>400: Invalid request
+</pre></noscript><script src="https://gist.github.com/e7362d86fdfae6560455.js"> </script></p>
+
+<p><strong>2.After successful deployment</strong>, we tweet any message created before the deployment.</p>
+
+<p><noscript><pre>400: Invalid request
+</pre></noscript><script src="https://gist.github.com/52a3a45e5e1392129877.js"> </script></p>
+
+<p>And so we will need to add the following to <code>.travis.yml</code>:</p>
+
+<p><noscript><pre>400: Invalid request
+</pre></noscript><script src="https://gist.github.com/39680add2472addded06.js"> </script></p>
+
+<p>That&#39;s it! if you think there&#39;s another simpler, more secure solution or any improvements, let me know on <a href="https://twitter.com/netbeatwork">Twitter</a>.</p>
+
+  </article>
+
+</div>
+
+    
+          <div class="post">
+
+ <header class="post-header">
     <h1><a href="/2015/07/24/video-downloader/">Video Downloader</a></h1>
     <p class="meta">Jul 24, 2015</p>
   </header>

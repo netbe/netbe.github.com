@@ -1,4 +1,7 @@
 require 'rake-jekyll'
+require 'net/http'
+
+TWEET_FILE="new-article.txt"
 
 Rake::Jekyll::GitDeployTask.new(:deploy) do |t|
 
@@ -47,4 +50,55 @@ Rake::Jekyll::GitDeployTask.new(:deploy) do |t|
     ENV['TRAVIS_PULL_REQUEST'].to_i > 0 ||
       %w[yes y true 1].include?(ENV['SKIP_COMMIT'].to_s.downcase)
   }
+end
+
+desc "Check if we have a new article and create the message"
+task :prepare_new_article_tweet do
+  title, article_url  = last_article
+  # Check if article already published
+  uri = URI(article_url)
+  res = Net::HTTP.get_response(uri)
+  if res.is_a?(Net::HTTPNotFound)
+    puts "If successful deployment, we should tweet"
+    message = "#{title} - #{article_url}"
+    system "echo #{message} > #{TWEET_FILE}"
+  else
+    puts "Last article already published"
+  end
+end
+
+desc "Tweet the newly published article"
+task :tweet do
+  if File.exists?(TWEET_FILE)
+    message = File.read(TWEET_FILE)
+    puts "Tweeting #{message}"
+    `bundle exec t update "#{message}" -P .trc`
+  end
+end
+
+def last_article
+  filename =  nil
+
+  Dir.chdir("_posts") do
+    filenames = `git ls-files`.split("\n")
+    filename = filenames.last
+  end
+
+  title = nil
+  # Try to find title inside article
+  File.read("_posts/#{filename}").each_line do |line|
+    next if /^---$/.match(line)
+    if match = /title: (.*)/.match(line)
+      title = match[1]
+      break
+    end
+  end
+  basename = filename.split('.')[0]
+  matched, year, month, day, name = /^(\d{4})-(\d{2})-(\d{2})-(.*)$/.match(basename).to_a
+  if title.nil?
+    # build title from filename if not found
+    title = name.gsub(/-/, ' ').capitalize
+  end
+  article_url = "https://netbe.github.io/#{year}/#{month}/#{day}/#{name}"
+  return title, article_url
 end

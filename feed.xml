@@ -5,9 +5,57 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 14 Oct 2015 23:57:48 +0200</pubDate>
-    <lastBuildDate>Wed, 14 Oct 2015 23:57:48 +0200</lastBuildDate>
+    <pubDate>Thu, 15 Oct 2015 09:02:50 +0200</pubDate>
+    <lastBuildDate>Thu, 15 Oct 2015 09:02:50 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Tweet your blog post title with Jekyll</title>
+        <description>&lt;ol&gt;
+&lt;li&gt;Add &lt;code&gt;gem &amp;#39;t&amp;#39;&lt;/code&gt; to your Gemfile&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bundle install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bundle exec t authorize&lt;/code&gt; and follow instructions to get &lt;a href=&quot;https://apps.twitter.com/&quot;&gt;API keys&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Permissions must be &lt;em&gt;&amp;#39;Read and Write&amp;#39;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Once authenticated, the permissions are stored in &lt;code&gt;~/.trc&lt;/code&gt;. We will need this file to tweet once the deployment successful, but as this file contains sensitive information, you want to secure it via &lt;code&gt;travis encrypt-file&lt;/code&gt; like this:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c6d97f59656d802b9f32.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;#39;s see what happen in the rake task &lt;code&gt;tweet_last_article&lt;/code&gt;. Two parts :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.Before Deployment,&lt;/strong&gt; we check if we have an unpublished article and retrieve its title and url.&lt;/p&gt;
+
+&lt;p&gt;We go through the list of &lt;code&gt;_posts&lt;/code&gt; files and take the last one. Grab the title from the content if any or build the one from the filename. Then goes the URL also building the last name.&lt;/p&gt;
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/8e89571a7b0637c5b703.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note that the base URL could certainly be retrieved from somewhere else, but I didn&amp;#39;t look more into it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Don&amp;#39;t forget to execute it before the deployment to Github:&lt;/p&gt;
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/e7362d86fdfae6560455.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.After successful deployment&lt;/strong&gt;, we tweet any message created before the deployment.&lt;/p&gt;
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/52a3a45e5e1392129877.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;And so we will need to add the following to &lt;code&gt;.travis.yml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/39680add2472addded06.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s it! if you think there&amp;#39;s another simpler, more secure solution or any improvements, let me know on &lt;a href=&quot;https://twitter.com/netbeatwork&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 14 Oct 2015 00:00:00 +0200</pubDate>
+        <link>http://netbe.github.io/2015/10/14/jekyll-twitter-travisci/</link>
+        <guid isPermaLink="true">http://netbe.github.io/2015/10/14/jekyll-twitter-travisci/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Video Downloader</title>
