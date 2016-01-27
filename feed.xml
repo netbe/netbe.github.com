@@ -5,8 +5,8 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 27 Jan 2016 20:05:42 +0100</pubDate>
-    <lastBuildDate>Wed, 27 Jan 2016 20:05:42 +0100</lastBuildDate>
+    <pubDate>Wed, 27 Jan 2016 20:10:28 +0100</pubDate>
+    <lastBuildDate>Wed, 27 Jan 2016 20:10:28 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -15,13 +15,16 @@
 
 &lt;p&gt;And as a first paid job, I am doing Quality Assurance, testing a system around a given API. This gives me the chance to go further on automated tests suite and the same time getting back to &lt;code&gt;ruby&lt;/code&gt;. I hope learning from that first project and come up with skills to improve my testing of iOS apps.&lt;/p&gt;
 
-&lt;p&gt;But I am not done with iOS, I still have some &lt;strong&gt;WIP&lt;/strong&gt; apps that I hope &lt;strong&gt;getting done&lt;/strong&gt; in the next 3 months.&lt;/p&gt;
+&lt;p&gt;But I am not done with iOS, I still have some &lt;em&gt;WIP&lt;/em&gt; apps that I hope &lt;em&gt;getting done&lt;/em&gt; in the next 3 months.&lt;/p&gt;
 
-&lt;p&gt;This new position allows me to be more flexible:
-- no restriction on location (ideally: 50% in Berlin, 50% elsewhere)
-- learning new skills: finding clients, managing time and finance...
-- more open source projects - &lt;strong&gt;ala&lt;/strong&gt; &lt;a href=&quot;http://artsy.github.io/blog/2016/01/13/OSS-Expectations/&quot;&gt;Artsy&lt;/a&gt;
-- share regularly my work and learnings - at least a Blog post per month&lt;/p&gt;
+&lt;p&gt;This new position allows me to be more flexible:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;no restriction on location (ideally: 50% in Berlin, 50% elsewhere)&lt;/li&gt;
+&lt;li&gt;learning new skills: finding clients, managing time and finance...&lt;/li&gt;
+&lt;li&gt;more open source projects - &lt;em&gt;ala&lt;/em&gt; &lt;a href=&quot;http://artsy.github.io/blog/2016/01/13/OSS-Expectations/&quot;&gt;Artsy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;share regularly my work and learnings - at least a Blog post per month&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Wed, 27 Jan 2016 00:00:00 +0100</pubDate>
         <link>http://netbe.github.io/2016/01/27/new-year-new-job/</link>
