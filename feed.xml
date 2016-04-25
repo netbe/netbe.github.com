@@ -5,9 +5,31 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 27 Jan 2016 20:10:28 +0100</pubDate>
-    <lastBuildDate>Wed, 27 Jan 2016 20:10:28 +0100</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Mon, 25 Apr 2016 20:34:49 +0200</pubDate>
+    <lastBuildDate>Mon, 25 Apr 2016 20:34:49 +0200</lastBuildDate>
+    <generator>Jekyll v3.0.4</generator>
+    
+      <item>
+        <title>iOS and Wifi setup</title>
+        <description>&lt;p&gt;Whenever I arrive at a new location, I need to setup wifi access for my iPhone, my Mac, iPad (and eventually camera).&lt;/p&gt;
+
+&lt;p&gt;So instead of entering foreach device the password, I&amp;#39;ll enter it first on my Macbook on Notes and let it sync via Bluetooth (can also work if 3G available) so I can directly copy/paste it on my iPhone and iPad.&lt;/p&gt;
+
+&lt;p&gt;I am amazed that Apple did not come up with a better solution, I know that Android supports QRCode that contains the SSID and password of the Wifi access point.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s the content of the Code, for example, a WIFI with SSID: &lt;code&gt;MYSSID&lt;/code&gt; and password: &lt;code&gt;PASSWORD&lt;/code&gt;, and ecnryption &lt;code&gt;WPA&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;WIFI:S:MYSSID;T:WPA;P:PASSWORD;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can use &lt;a href=&quot;https://www.google.es/?q=qr+code+wifi+password&quot;&gt;websites&lt;/a&gt; to generate it for you.&lt;/p&gt;
+
+&lt;p&gt;Would be great to have that supported: Just scan with your phone&amp;#39;s camera and done! Maybe that will show up in iOS 10, we&amp;#39;ll see that soon.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Apr 2016 00:00:00 +0200</pubDate>
+        <link>http://netbe.github.io/2016/04/25/ios-wifi-setup/</link>
+        <guid isPermaLink="true">http://netbe.github.io/2016/04/25/ios-wifi-setup/</guid>
+        
+        
+      </item>
     
       <item>
         <title>New Year New Job</title>
@@ -157,23 +179,23 @@ When the user changes the top-level view controller, the navigation controller u
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;can&amp;#39;t launch the application without the harddrive connected
 &lt;picture&gt;
-&lt;source srcset=&quot;/generated/no-harddrive-300by195-a67d54.png&quot; media=&quot;(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)&quot;&gt;
-&lt;source srcset=&quot;/generated/no-harddrive-150by97-a67d54.png&quot; media=&quot;(max-width: 20em)&quot;&gt;
-&lt;source srcset=&quot;/generated/no-harddrive-424by275-a67d54.png&quot; media=&quot;(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-&lt;source srcset=&quot;/generated/no-harddrive-320by208-a67d54.png&quot; media=&quot;(max-width: 40em)&quot;&gt;
-&lt;source srcset=&quot;/generated/no-harddrive-424by275-a67d54.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-&lt;source srcset=&quot;/generated/no-harddrive-424by275-a67d54.png&quot;&gt;
-&lt;img srcset=&quot;/generated/no-harddrive-424by275-a67d54.png&quot; class=&quot;default-pict&quot; alt=&quot;no harddrive connected&quot; &gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/no-harddrive-300by195-a67d54.png&quot; media=&quot;(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/no-harddrive-150by97-a67d54.png&quot; media=&quot;(max-width: 20em)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/no-harddrive-424by275-a67d54.png&quot; media=&quot;(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/no-harddrive-320by208-a67d54.png&quot; media=&quot;(max-width: 40em)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/no-harddrive-424by275-a67d54.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/no-harddrive-424by275-a67d54.png&quot;&gt;
+&lt;img src=&quot;http://netbe.github.io/generated/no-harddrive-424by275-a67d54.png&quot; class=&quot;default-pict&quot; alt=&quot;no harddrive connected&quot; &gt;
 &lt;/picture&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;can&amp;#39;t unmount the harddrive before quitting the app
 &lt;picture&gt;
-&lt;source srcset=&quot;/generated/harddrive-eject-300by101-5a0e57.png&quot; media=&quot;(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)&quot;&gt;
-&lt;source srcset=&quot;/generated/harddrive-eject-150by51-5a0e57.png&quot; media=&quot;(max-width: 20em)&quot;&gt;
-&lt;source srcset=&quot;/generated/harddrive-eject-482by163-5a0e57.png&quot; media=&quot;(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-&lt;source srcset=&quot;/generated/harddrive-eject-320by108-5a0e57.png&quot; media=&quot;(max-width: 40em)&quot;&gt;
-&lt;source srcset=&quot;/generated/harddrive-eject-482by163-5a0e57.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-&lt;source srcset=&quot;/generated/harddrive-eject-482by163-5a0e57.png&quot;&gt;
-&lt;img srcset=&quot;/generated/harddrive-eject-482by163-5a0e57.png&quot; class=&quot;default-pict&quot; alt=&quot;can&#39;t unmount&quot; &gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-300by101-5a0e57.png&quot; media=&quot;(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-150by51-5a0e57.png&quot; media=&quot;(max-width: 20em)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-482by163-5a0e57.png&quot; media=&quot;(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-320by108-5a0e57.png&quot; media=&quot;(max-width: 40em)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-482by163-5a0e57.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+&lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-482by163-5a0e57.png&quot;&gt;
+&lt;img src=&quot;http://netbe.github.io/generated/harddrive-eject-482by163-5a0e57.png&quot; class=&quot;default-pict&quot; alt=&quot;can&#39;t unmount&quot; &gt;
 &lt;/picture&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -349,13 +371,13 @@ When the user changes the top-level view controller, the navigation controller u
 &lt;p&gt;At least this would look better than the previous content:&lt;/p&gt;
 
 &lt;p&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;/generated/intro-article-old-site-300by133-332a9c.jpg&quot; media=&quot;(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/generated/intro-article-old-site-150by66-332a9c.jpg&quot; media=&quot;(max-width: 20em)&quot;&gt;
-    &lt;source srcset=&quot;/generated/intro-article-old-site-640by284-332a9c.jpg&quot; media=&quot;(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/generated/intro-article-old-site-320by142-332a9c.jpg&quot; media=&quot;(max-width: 40em)&quot;&gt;
-    &lt;source srcset=&quot;/generated/intro-article-old-site-1352by599-332a9c.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
-    &lt;source srcset=&quot;/generated/intro-article-old-site-680by301-332a9c.jpg&quot;&gt;
-    &lt;img srcset=&quot;/generated/intro-article-old-site-680by301-332a9c.jpg&quot; class=&quot;default-pict&quot; alt=&quot;the old github page&quot; &gt;
+    &lt;source srcset=&quot;http://netbe.github.io/generated/intro-article-old-site-300by133-332a9c.jpg&quot; media=&quot;(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;http://netbe.github.io/generated/intro-article-old-site-150by66-332a9c.jpg&quot; media=&quot;(max-width: 20em)&quot;&gt;
+    &lt;source srcset=&quot;http://netbe.github.io/generated/intro-article-old-site-640by284-332a9c.jpg&quot; media=&quot;(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;http://netbe.github.io/generated/intro-article-old-site-320by142-332a9c.jpg&quot; media=&quot;(max-width: 40em)&quot;&gt;
+    &lt;source srcset=&quot;http://netbe.github.io/generated/intro-article-old-site-1352by599-332a9c.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
+    &lt;source srcset=&quot;http://netbe.github.io/generated/intro-article-old-site-680by301-332a9c.jpg&quot;&gt;
+    &lt;img src=&quot;http://netbe.github.io/generated/intro-article-old-site-680by301-332a9c.jpg&quot; class=&quot;default-pict&quot; alt=&quot;the old github page&quot; &gt;
   &lt;/picture&gt;&lt;/p&gt;
 
 &lt;p&gt;This was an idea to have an interactive CV using HTML5...&lt;/p&gt;

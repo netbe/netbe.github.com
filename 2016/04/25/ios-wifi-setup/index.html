@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Time to start</title>
+    <title>iOS and Wifi setup</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This site contains articles about my work and other geeky stuff.">
-    <link rel="canonical" href="http://netbe.github.io/2015/05/28/intro-article/">
+    <link rel="canonical" href="http://netbe.github.io/2016/04/25/ios-wifi-setup/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -73,25 +73,22 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Time to start</h1>
+    <h1>iOS and Wifi setup</h1>
   </header>
 
   <article class="post-content">
-  <p>For quite some time, I wanted to write down some thoughts and findings around development and technology. Hopefully that won&#39;t be a &quot;one article blog&quot; containing this article that announces more articles to come.</p>
+  <p>Whenever I arrive at a new location, I need to setup wifi access for my iPhone, my Mac, iPad (and eventually camera).</p>
 
-<p>At least this would look better than the previous content:</p>
+<p>So instead of entering foreach device the password, I&#39;ll enter it first on my Macbook on Notes and let it sync via Bluetooth (can also work if 3G available) so I can directly copy/paste it on my iPhone and iPad.</p>
 
-<p><picture>
-    <source srcset="http://netbe.github.io/generated/intro-article-old-site-300by133-332a9c.jpg" media="(max-width: 20em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 20em) and (min-resolution: 192dpi)">
-    <source srcset="http://netbe.github.io/generated/intro-article-old-site-150by66-332a9c.jpg" media="(max-width: 20em)">
-    <source srcset="http://netbe.github.io/generated/intro-article-old-site-640by284-332a9c.jpg" media="(max-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (max-width: 40em) and (min-resolution: 192dpi)">
-    <source srcset="http://netbe.github.io/generated/intro-article-old-site-320by142-332a9c.jpg" media="(max-width: 40em)">
-    <source srcset="http://netbe.github.io/generated/intro-article-old-site-1352by599-332a9c.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-    <source srcset="http://netbe.github.io/generated/intro-article-old-site-680by301-332a9c.jpg">
-    <img src="http://netbe.github.io/generated/intro-article-old-site-680by301-332a9c.jpg" class="default-pict" alt="the old github page" >
-  </picture></p>
+<p>I am amazed that Apple did not come up with a better solution, I know that Android supports QRCode that contains the SSID and password of the Wifi access point.</p>
 
-<p>This was an idea to have an interactive CV using HTML5...</p>
+<p>Here&#39;s the content of the Code, for example, a WIFI with SSID: <code>MYSSID</code> and password: <code>PASSWORD</code>, and ecnryption <code>WPA</code>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">WIFI:S:MYSSID;T:WPA;P:PASSWORD;;
+</code></pre></div>
+<p>You can use <a href="https://www.google.es/?q=qr+code+wifi+password">websites</a> to generate it for you.</p>
+
+<p>Would be great to have that supported: Just scan with your phone&#39;s camera and done! Maybe that will show up in iOS 10, we&#39;ll see that soon.</p>
 
   </article>
 
