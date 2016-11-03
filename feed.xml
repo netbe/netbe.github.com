@@ -5,9 +5,9 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 25 Apr 2016 20:34:49 +0200</pubDate>
-    <lastBuildDate>Mon, 25 Apr 2016 20:34:49 +0200</lastBuildDate>
-    <generator>Jekyll v3.0.4</generator>
+    <pubDate>Thu, 03 Nov 2016 10:09:08 +0100</pubDate>
+    <lastBuildDate>Thu, 03 Nov 2016 10:09:08 +0100</lastBuildDate>
+    <generator>Jekyll v3.3.0</generator>
     
       <item>
         <title>iOS and Wifi setup</title>
@@ -195,7 +195,7 @@ When the user changes the top-level view controller, the navigation controller u
 &lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-320by108-5a0e57.png&quot; media=&quot;(max-width: 40em)&quot;&gt;
 &lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-482by163-5a0e57.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)&quot;&gt;
 &lt;source srcset=&quot;http://netbe.github.io/generated/harddrive-eject-482by163-5a0e57.png&quot;&gt;
-&lt;img src=&quot;http://netbe.github.io/generated/harddrive-eject-482by163-5a0e57.png&quot; class=&quot;default-pict&quot; alt=&quot;can&#39;t unmount&quot; &gt;
+&lt;img src=&quot;http://netbe.github.io/generated/harddrive-eject-482by163-5a0e57.png&quot; class=&quot;default-pict&quot; alt=&quot;can't unmount&quot; &gt;
 &lt;/picture&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
