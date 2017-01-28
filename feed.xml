@@ -5,9 +5,9 @@
     <description>This site contains articles about my work and other geeky stuff.</description>
     <link>http://netbe.github.io/</link>
     <atom:link href="http://netbe.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Nov 2016 10:09:08 +0100</pubDate>
-    <lastBuildDate>Thu, 03 Nov 2016 10:09:08 +0100</lastBuildDate>
-    <generator>Jekyll v3.3.0</generator>
+    <pubDate>Sat, 28 Jan 2017 07:10:17 +0100</pubDate>
+    <lastBuildDate>Sat, 28 Jan 2017 07:10:17 +0100</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>iOS and Wifi setup</title>
