@@ -35,7 +35,7 @@ Rake::Jekyll::GitDeployTask.new(:deploy) do |t|
     Rake.sh "bundle exec jekyll build --destination #{dest_dir}"
   }
   # Use the default committer (configured in git) when available.
-  t.override_committer = false
+  t.override_committer = true
 
   # Use URL of the 'origin' remote to fetch/push the built site into. If env.
   # variable GH_TOKEN is set, then it adds it as a userinfo to the URL.
