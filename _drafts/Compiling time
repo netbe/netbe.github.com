@@ -1,0 +1,6 @@
+Xcode compiling all files of the project instead of just the one changed.
+
+
+## Potential Reasons:
+
+- https://forums.developer.apple.com/thread/44406
